@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>15-3 Py Flask DB: Zin Forms</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="align-center">
+
+    <h1 class="mg-5">Simple Python Flask Scripts Calculator</h1>
+    
+<!-- Add Form -->
+<div class="mg-5"> 
+    <h3>Add</h3>
+    <form id="add-form" action="/add" method="post">
+      <input id="firstNumber" type="text" name="firstNumber" placeholder="First number">
+      <input id="secondNumber" type="text" name="secondNumber" placeholder="Second number">
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="result"></div>
+  </div>
+  
+  <!-- Multiply Form -->
+  <div class="mg-5"> 
+    <h3>Multiply</h3>
+    <form id="multiply-form" action="/multiply" method="post">
+      <input id="m-firstNumber" type="text" name="m-firstNumber" placeholder="First number">
+      <input id="m-secondNumber" type="text" name="m-secondNumber" placeholder="Second number">
+      <button type="submit">Calculate</button>
+    </form>
+    <div id="multiply-result"></div>
+  </div>
+  
+  <!-- Generate Product ID Form -->
+  <div class="mg-5"> 
+    <h3>Generate Product ID</h3>
+    <form id="product-id-form" action="/generate_product_id" method="post">
+      <select id="product-type" name="product-type">
+        <option value="powertrain">Powertrain</option>
+        <option value="fueling">Fueling</option>
+        <option value="electrical">Electrical</option>
+        <option value="etc">Etc</option>
+      </select>
+      <input id="product-identifier" type="text" name="product-identifier" placeholder="Custom Identifier">
+      <button type="submit">Submit</button>
+    </form>
+    <div id="product-id-result"></div>
+  </div>
+
+  </div>
+  <script src="scripts.js"></script>
+</body>
+</html>
